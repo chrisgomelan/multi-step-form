@@ -19,9 +19,8 @@
 </head>
 <body>
 
-<section class="personal-info">
-  <div class="steps">
-
+<main>
+<div class="steps">
     <div class="step one">
         <h6>1</h6>
         <h5>STEP 1 <br>YOUR INFO</h5>
@@ -41,17 +40,32 @@
         <h6>4</h6>
         <h5>STEP 4 <br>SUMMARY</h5>
     </div>
+</div>
 
-  </div>
-
-  <div class="p-info">
+<div class="right-side">
+<section class="personal-info">
     <h1>Personal Info</h1>
     <h4>Please provide your name, email address, and phone number.</h4>
-  </div>
+
+    <form class="per-info">
+      <label>Name</label><br>
+      <input type="text" placeholder="e.g. Stephen King">
+      <label>Email</label><br>
+      <input type="email" placeholder="e.g. stephenking@lorem.com">
+      <label>Phone</label><br>
+      <input type="number" placeholder="e.g. Stephen King"  maxlength="11">
+    </form>
 </section>
 
+<div class="nxtprev">
+    <button class="prev">Go Back</button>
+    <button class="next">Next Step</button>
+</div>
+
+</div>
 
 
+</main>
 
 
 
