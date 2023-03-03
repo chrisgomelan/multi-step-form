@@ -15,5 +15,16 @@ $white: hsl(0, 0%, 100%);
 //font-family
 $ubuntu: 'Ubuntu',sans-serif;
 
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+
+
+.step{
+    display: flex;
+}
 
