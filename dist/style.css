@@ -41,7 +41,7 @@ main .steps {
 main .steps .step {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.9rem;
   padding: 0.1rem;
 }
 main .steps .step h6 {
@@ -63,4 +63,62 @@ main .steps h5 {
 main .steps .step.one h6 {
   background-color: hsl(206, 94%, 87%);
   color: hsl(213, 96%, 18%);
+}
+main .right-side {
+  position: relative;
+  left: -3rem;
+  height: 100%;
+}
+main .right-side .personal-info {
+  padding: 2rem 2rem 0 0;
+}
+main .right-side .personal-info h1 {
+  color: hsl(213, 96%, 18%);
+}
+main .right-side .personal-info h4 {
+  color: hsl(231, 11%, 63%);
+  font-weight: 100;
+  font-size: 13.5px;
+  margin-top: 0.5rem;
+}
+main .right-side .personal-info .per-info {
+  margin-top: 1.5rem;
+}
+main .right-side .personal-info .per-info label {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 13px;
+}
+main .right-side .personal-info .per-info input {
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid hsl(231, 11%, 63%);
+  transition: border 0.1s ease-in-out;
+}
+main .right-side .personal-info .per-info input:active,
+main .right-side .personal-info .per-info input:focus {
+  border: 1px solid hsl(243, 100%, 62%);
+  outline: none !important;
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+main .right-side .next {
+  position: relative;
+  float: right;
+  margin: 0 2rem 0 0;
+  border: none;
+  background: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem 1.1rem;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 7px;
+  top: 86px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+main .right-side .next:hover {
+  filter: brightness(120%);
 }/*# sourceMappingURL=style.css.map */
