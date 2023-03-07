@@ -90,9 +90,10 @@ main{
         position: relative;
         left: -3rem;
         height: 100%;
-
-        .personal-info{
+       //   overflow: hidden;
+        section{
             padding: 2rem 2rem 0 0 ;
+         
             h1{
                 color: $marineBlue;
                
@@ -104,33 +105,32 @@ main{
                 margin-top: .5rem;
                
             }
-            .per-info{
-                margin-top: 1.5rem;
-
-                label{
-                    color: $marineBlue;
-                    font-weight: 500;
-                    font-size: 13px;
-                }
-                input{
-                    margin: .5rem 0 1rem 0;
-                    width: 100%;
-                    padding: .5rem;
-                    border-radius: 6px;
-                    border: 1px solid $coolGray;
-                    transition:border 0.1s ease-in-out;
-                    
-                }
-                input:active,
-                input:focus{
-                    border: 1px solid $purpishBlue;
-                    outline: none !important;
-                    color: $marineBlue;
-                    font-weight: 600;
-                }
+            label{
+                color: $marineBlue;
+                font-weight: 500;
+                font-size: 13px;
+            }
+            input{
+                margin: .5rem 0 1rem 0;
+                width: 100%;
+                padding: .5rem;
+                border-radius: 6px;
+                border: 1px solid $coolGray;
+                transition:border 0.1s ease-in-out;
                 
             }
+            input:active,
+            input:focus{
+                border: 1px solid $purpishBlue;
+                outline: none !important;
+                color: $marineBlue;
+                font-weight: 600;
+            }
+            form{
+                margin-top: 1.5rem;
+            }
         }
+       
         .next{
             position: relative;
             float: right;
@@ -142,13 +142,164 @@ main{
             font-weight: 500;
             font-size: 12px;
             border-radius: 7px;
-            top: 86px;
+            top: -2rem;
             cursor: pointer;
             transition: 0.1s ease-in-out;
         }
         .next:hover{
             filter: brightness(120%);
             
+        }
+    }
+    .personal-info{
+        position: relative;
+        right: -35rem;
+    }
+    .select-plan{
+        position: relative;
+        top: -20.8rem;
+        //right: -35rem;
+
+        .plans{
+            display: flex;
+            width: 100%;
+            gap: 1rem ;
+            .card2{
+                width: 7rem;
+            }
+            #card{
+                margin-top: 1rem;
+                width: 8rem;
+                //height: 7rem;
+                padding: .5rem .5rem 1rem .5rem;
+                border-radius: 5px;
+                border: 1px solid $lightGray;
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+            }
+            
+            #card.active{
+                border-color:$purpishBlue;
+                background-color: rgb(240, 245, 248);
+            }
+            #card:hover{
+                border-color:$purpishBlue;
+                
+            }
+            #card h4{
+                margin-top: 2rem;
+            }
+            .card 
+            {
+                h4{
+                    color: $marineBlue;
+                    font-weight: 600;
+                }
+                h5{
+                color: $coolGray;
+                    font-weight: 500;
+            }
+            }
+            .card1{
+                h5:before{
+                    content: "$9/mo";
+                    
+                }
+            }
+            .card2{
+                h5:before{
+                    content: "$12/mo";
+                }
+            }
+            .card3{
+                h5:before{
+                    content: "$15/mo";
+                }
+            }
+            .card.style:after{
+                content: "2 months free";
+                color: $marineBlue;
+                font-size: 11px;
+                position: relative;
+                top: .5rem;
+                width: 100%;
+                font-weight: 600;
+            }
+            .card1.style{
+                h5::before{
+                    content: "$90/yr";
+                }
+            }
+            .card2.style{
+                h5::before{
+                    content: "$120/yr";
+                }
+            }
+            .card3.style{
+                h5::before{
+                    content: "$150/yr";
+                }
+            }
+            /*.card:active,
+            .card:focus,
+            .card:hover
+            {
+                border-color:$purpishBlue;
+                //outline: none !important;
+            }*/
+        }
+        .time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 1.5rem;
+            gap: 1.5rem;
+           padding: .2rem .5rem .5rem .5rem;
+            
+            width: 100%;
+            background-color: rgb(240, 245, 248);
+            *{
+                font-weight: 600;
+                font-size: 13px;
+            }
+            .oblong{
+                cursor: pointer;
+                width: 2rem;
+                padding: .2rem 1.1rem;
+                position: relative;
+                top: .2rem;
+                background-color: $marineBlue;
+                border-radius: 10px;
+                .circle{
+                    background-color: $white;
+                    width: .8rem;
+                    border-radius: 10px;
+                    height: .8rem;
+                    position: relative;
+                    left: -.9rem;
+                    transition: 0.2s ease-in-out;
+                }
+                .circle.active{
+                    position: relative;
+                    left: 0.1rem;
+    
+                }
+
+            }
+            .monthly{
+                color: $marineBlue;
+                transition: 0.2s ease-in-out;
+            }
+            .monthly.active{
+                color: $coolGray;
+            }
+            .yearly.active{
+                color: $marineBlue;
+            }
+            
+            
+          
         }
     }
 }
