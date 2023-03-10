@@ -7,6 +7,11 @@ let oblong = document.querySelector('.oblong');
 let circ = document.querySelector('.circle');
 let yearly = document.querySelector('.yearly');
 let monthly = document.querySelector('.monthly');
+let ch1 = document.querySelector('.ch1');
+let ch2 = document.querySelector('.ch2');
+let ch3 = document.querySelector('.ch3');
+
+let addOns = document.querySelector('.add-ons');
 // card.forEach(card => card.addEventListener("click", function(){
 //     this.classList.toggle('active')
    
@@ -42,5 +47,17 @@ oblong.addEventListener('click',function(){
     card1.classList.toggle('style');
     card2.classList.toggle('style');
     card3.classList.toggle('style');
-    
+    ch1.classList.toggle('active');
+    ch2.classList.toggle('active');
+    ch3.classList.toggle('active');
+    addOns.classList.toggle('active');
 })
+
+ 
+
+let choices = document.querySelectorAll(".choice");
+let chkbox = document.querySelectorAll('input[type="checkbox"]');
+
+choices.forEach(choices => choices.addEventListener("click", function(){
+    this.classList.toggle('active');
+}))
