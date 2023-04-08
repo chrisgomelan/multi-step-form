@@ -121,7 +121,7 @@ main .right-side .next {
   font-weight: 500;
   font-size: 12px;
   border-radius: 7px;
-  top: -13rem;
+  top: -40rem;
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
@@ -260,6 +260,7 @@ main .add-ons.active {
 main .add-ons {
   position: relative;
   top: -38.8rem;
+  left: 105rem;
 }
 main .add-ons .choices {
   display: flex;
@@ -352,4 +353,8 @@ main .add-ons .choice.active input[type=checkbox]::before {
 }
 main .add-ons .choice:hover {
   border: 1px solid hsl(243, 100%, 62%);
+}
+main .summary {
+  position: relative;
+  bottom: 60.5rem;
 }/*# sourceMappingURL=style.css.map */

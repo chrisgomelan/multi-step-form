@@ -146,7 +146,7 @@ main{
             font-weight: 500;
             font-size: 12px;
             border-radius: 7px;
-            top: -13rem;
+            top: -40rem;
             cursor: pointer;
             transition: 0.1s ease-in-out;
         }
@@ -315,6 +315,8 @@ main{
     .add-ons{
         position: relative;
         top: -38.8rem;
+        left: 105rem;
+
         .choices{
             display: flex;
             flex-direction: column;
@@ -416,5 +418,10 @@ main{
     .choice:hover{
         border: 1px solid $purpishBlue;
     }
+    }
+
+    .summary{
+        position: relative;
+        bottom: 60.5rem;
     }
 }
